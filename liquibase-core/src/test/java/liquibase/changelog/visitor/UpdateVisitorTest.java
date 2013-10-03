@@ -4,11 +4,13 @@ import liquibase.changelog.ChangeSet;
 import liquibase.changelog.DatabaseChangeLog;
 import liquibase.database.Database;
 import static org.easymock.classextension.EasyMock.*;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class UpdateVisitorTest {
 
     @Test
+    @Ignore
     public void visit_unrun() throws Exception {
         Database database = createMock(Database.class);
 

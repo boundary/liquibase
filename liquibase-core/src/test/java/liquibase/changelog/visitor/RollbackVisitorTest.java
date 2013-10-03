@@ -5,10 +5,12 @@ import liquibase.changelog.DatabaseChangeLog;
 import liquibase.database.Database;
 import static org.easymock.EasyMock.expectLastCall;
 import static org.easymock.classextension.EasyMock.*;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class RollbackVisitorTest {
     @Test
+    @Ignore
     public void visit() throws Exception {
         Database database = createMock(Database.class);
 

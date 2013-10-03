@@ -28,9 +28,9 @@
     </issueManagement>
 
     <scm>
-        <connection>scm:git:git@github.com:liquibase/liquibase.git</connection>
-        <url>scm:git:git@github.com:liquibase/liquibase.git</url>
-        <developerConnection>scm:git:git@github.com:liquibase/liquibase.git</developerConnection>
+        <connection>scm:git:git@github.com:boundary/liquibase.git</connection>
+        <url>scm:git:git@github.com:boundary/liquibase.git</url>
+        <developerConnection>scm:git:git@github.com:boundary/liquibase.git</developerConnection>
     </scm>
 
     <developers>
@@ -259,17 +259,14 @@
 
     <distributionManagement>
         <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>sonatype-nexus-staging</id>
-            <name>Sonatype Production Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-
+            <id>maven.boundary.com</id>
+            <name>maven.boundary.com-releases</name>
+            <url>http://maven.boundary.com/artifactory/external</url>
         </repository>
         <snapshotRepository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sontatype Snapshot Repository</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>maven.boundary.com</id>
+            <name>maven.boundary.com-snapshots</name>
+            <url>http://maven.boundary.com/artifactory/external</url>
         </snapshotRepository>
     </distributionManagement>
 
